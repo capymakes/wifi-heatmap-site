@@ -1,0 +1,145 @@
+/* Deadzone — shared styles.
+   Tokens mirror App/Design/Theme.swift so the site and the app read as one
+   product: blue-leaning-cyan accent, cool near-white ground, and the
+   red/amber/green ramp reserved for signal data rather than decoration. */
+
+:root {
+  --accent: #1F5AE8;
+  --accent-soft: rgba(31, 90, 232, 0.10);
+  --cyan: #0FB5A0;
+  --canvas: #F3F5FA;
+  --surface: #FFFFFF;
+  --sunken: #F0F3F8;
+  --ink: #0C1420;
+  --ink-2: #5A6676;
+  --ink-3: #8C97A6;
+  --hairline: #E2E7EF;
+  --weak: #C24A34;
+  --fair: #B4801F;
+  --strong: #1E8A5E;
+  --radius: 20px;
+  --radius-sm: 14px;
+  --shadow: 0 1px 2px rgba(12, 20, 32, .04), 0 12px 32px -12px rgba(12, 20, 32, .12);
+  --measure: 68ch;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- header ---------- */
+
+header.site {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--hairline);
+  background: rgba(243, 245, 250, .86);
+  backdrop-filter: saturate(180%) blur(14px);
+  position: sticky; top: 0; z-index: 10;
+}
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand .mark {
+  width: 32px; height: 32px; border-radius: 9px;
+  background: linear-gradient(135deg, var(--accent), var(--cyan));
+  display: grid; place-items: center; color: #fff; font-size: 15px; font-weight: 700;
+}
+.brand strong { font-size: 17px; letter-spacing: -.01em; }
+nav.site a {
+  color: var(--ink-2); text-decoration: none; font-size: 14px; font-weight: 500;
+  margin-left: 20px;
+}
+nav.site a:hover { color: var(--accent); }
+
+/* ---------- type ---------- */
+
+h1 {
+  font-size: clamp(2.1rem, 5.5vw, 3.1rem);
+  line-height: 1.08; letter-spacing: -.03em; margin: 0 0 14px;
+  text-wrap: balance;
+}
+h2 {
+  font-size: 1.3rem; letter-spacing: -.015em; margin: 40px 0 10px;
+  text-wrap: balance;
+}
+h3 { font-size: 1.02rem; margin: 26px 0 6px; }
+p, li { color: var(--ink-2); max-width: var(--measure); }
+p { margin: 0 0 14px; }
+a { color: var(--accent); }
+strong { color: var(--ink); font-weight: 600; }
+.lede { font-size: 1.12rem; color: var(--ink-2); max-width: 56ch; }
+.eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); margin: 0 0 10px;
+}
+.updated { font-size: 13px; color: var(--ink-3); margin-bottom: 34px; }
+
+/* ---------- blocks ---------- */
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  margin: 22px 0;
+}
+.card p:last-child, .card ul:last-child { margin-bottom: 0; }
+
+.callout {
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 18px 22px;
+  margin: 22px 0;
+  box-shadow: var(--shadow);
+}
+.callout p:last-child { margin-bottom: 0; }
+
+ul { padding-left: 1.15em; margin: 0 0 16px; }
+li { margin: 7px 0; }
+li::marker { color: var(--ink-3); }
+
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); margin: 22px 0; }
+
+.pill {
+  display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; padding: 4px 9px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+}
+
+.ramp { height: 6px; border-radius: 3px; background: linear-gradient(90deg, var(--weak), var(--fair), var(--strong)); }
+
+section { padding: 56px 0; }
+section.hero { padding: 80px 0 44px; }
+
+/* ---------- footer ---------- */
+
+footer.site {
+  border-top: 1px solid var(--hairline);
+  padding: 34px 0 60px;
+  margin-top: 40px;
+  color: var(--ink-3);
+  font-size: 13px;
+}
+footer.site a { color: var(--ink-2); text-decoration: none; margin-right: 18px; }
+footer.site a:hover { color: var(--accent); }
+
+/* ---------- policy pages ---------- */
+
+.policy h2 { margin-top: 36px; }
+.policy p, .policy li { font-size: 15px; }
+
+@media (max-width: 640px) {
+  section { padding: 40px 0; }
+  section.hero { padding: 52px 0 32px; }
+  nav.site a { margin-left: 14px; font-size: 13px; }
+}

@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css"><title>Privacy Policy — WiFi Heatmap</title>
-<meta name="description" content="How WiFi Heatmap handles your data. Short version: your scans never leave your iPhone; the app sends anonymous usage events.">
+<meta name="description" content="How WiFi Heatmap handles your data. Short version: your scans never leave your iPhone; the app sends usage events you can switch off.">
 </head><body>
 <header class="site"><div class="wrap bar">
   <a class="brand" href="index.html"><span class="mark">D</span><strong>WiFi Heatmap</strong></a>
@@ -11,11 +11,14 @@
 <section class="policy"><div class="wrap">
   <p class="eyebrow">Legal</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 2 October 2026</p>
+  <p class="updated">Last updated 21 October 2026</p>
 
   <div class="callout">
-    <p><strong>The short version.</strong> Your scans, your 3D room models and your measurements stay on your iPhone. There is no account. We cannot see your home, your network name, or your address. The app sends anonymous usage events, described below, so we can see which parts of it work.</p>
+    <p><strong>The short version.</strong> Your scans, your 3D room models, your measurements and your setup answers stay on your iPhone or iPad. There is no account. We cannot see your home, your network name or your address. The app sends usage events under a random identifier so we can see which parts of it work, and you can switch them off in the app at any time (You &rarr; Your data &rarr; Share usage stats).</p>
   </div>
+
+  <h2>Who is responsible</h2>
+  <p>WiFi Heatmap is made by Rupangkan Kalita, an independent developer, who is the controller of the personal data described here. Contact: <a href="mailto:kalitaventures@gmail.com">kalitaventures@gmail.com</a>.</p>
 
   <h2>What stays on your device</h2>
   <p>Everything that describes your home. Specifically:</p>
@@ -23,48 +26,60 @@
     <li>The 3D models produced when you scan a room.</li>
     <li>Every measurement taken during a walk, and where in the room it was taken.</li>
     <li>Your WiFi network name and the identifier of the access point you are connected to.</li>
-    <li>Your name, if you chose to give one.</li>
+    <li>The answers you give during setup, and your name if you chose to give one in an earlier version.</li>
   </ul>
-  <p>This information is written to the app's private storage area on your iPhone. It is not uploaded, and deleting the app removes all of it permanently.</p>
+  <p>This information is written to the app's private storage area on your device. It is not uploaded, and deleting the app removes all of it permanently.</p>
 
-  <h2>What leaves your device</h2>
+  <h2>What leaves your device, and why</h2>
+
   <h3>Speed measurements</h3>
-  <p>To measure throughput, the app downloads a block of test data from Cloudflare's public speed measurement endpoint. This is an ordinary internet request. It reveals your IP address to Cloudflare in the same way visiting any website does. No information about your home, your scans or your network is included.</p>
+  <p>To measure throughput, the app downloads a block of test data from Cloudflare's public speed measurement endpoint. This is an ordinary internet request and reveals your IP address to Cloudflare, as visiting any website does. No information about your home, your scans or your network is included. <em>Legal basis: necessary to provide the speed test you asked for (Art. 6(1)(b) GDPR).</em></p>
 
   <h3>Messages you choose to send</h3>
-  <p>If you write a suggestion or send us a video link from inside the app, the message you typed is delivered to us by email through a third-party form relay (FormSubmit). It is sent only when you press Send. Alongside your message we include the answers you gave during setup — your home type, your WiFi setup, the speed you pay for and what you have already tried — so a suggestion arrives with enough context to act on. Your name is included only if you chose to give one. Nothing is sent if you never press Send.</p>
+  <p>If you write a suggestion or send us a video link from inside the app, the message you typed is delivered to us by email through a form relay (FormSubmit). It is sent only when you press Send. Alongside your message we include the setup answers stored on your device (for example your WiFi setup and the speed you pay for) so a suggestion arrives with enough context to act on. If you add your email address to the message, we use it only to reply. <em>Legal basis: your request (Art. 6(1)(b)). Kept until the conversation is finished, then deleted on request or after 12 months.</em></p>
 
   <h3>Purchases</h3>
-  <p>Purchases are handled entirely by Apple. We never see your payment details. When a purchase is made or restored, the app passes Apple's confirmation of it to RevenueCat, a purchase-records service, under a random identifier created on your device. RevenueCat tells us which product was bought, the price and the country of the App Store account. It does not receive your name, your email address or anything about your home.</p>
+  <p>Purchases are handled entirely by Apple; we never see your payment details. When a purchase is made or restored, the app passes Apple's confirmation of it to RevenueCat, a purchase-records service, under a random identifier created on your device. RevenueCat tells us which product was bought, the price and the country of the App Store account. It does not receive your name, your email address or anything about your home. <em>Legal basis: necessary to deliver and restore what you bought (Art. 6(1)(b)). Kept for as long as the purchase can be restored and as tax records require.</em></p>
 
-  <h3>Anonymous usage</h3>
-  <p>The app sends short usage events to Plumb, an analytics service run by us. Each event is tagged with a random identifier created when the app is first opened, which is not linked to your Apple Account, your name or anything else about you. The events say things like:</p>
+  <h3>Usage events</h3>
+  <p>Unless you switch them off, the app sends short usage events to Plumb, an analytics service we run ourselves. Each event carries a random identifier created when the app is first opened. It is not linked to your Apple Account or your name, but because it stays the same on your device it counts as pseudonymous personal data under data protection law, so we treat it as such. The events say things like:</p>
   <ul>
-    <li>which setup screen you reached, and the option you tapped on it (for example your home type, your WiFi setup and the speed you pay for);</li>
+    <li>which setup screen you reached and the option you tapped on it (for example your WiFi setup and the speed you pay for);</li>
     <li>whether the purchase screen was shown, which option was selected and whether a purchase completed;</li>
     <li>whether a room scan was started, finished or left part-way, and whether it used LiDAR;</li>
-    <li>the app version, the iPhone or iPad model, the iOS version, and the language and region settings.</li>
+    <li>the app version, the device model, the iOS version, and the language and region settings.</li>
   </ul>
-  <p>Plumb does not look up where requests come from: the only country it records is the region set in your iPhone's or iPad's settings, and your internet address is not kept. The events never contain your scans, measurements, network name, location, the devices on your network or anything you type. We use them only to understand where people get stuck and to improve the app.</p>
+  <p>Plumb does not look up where requests come from: the only country it records is the region set in your device's settings, and your internet address is not stored. The events never contain your scans, measurements, network name, location, the devices on your network or anything you type. We use them only to find where people get stuck and to improve the app.</p>
+  <p><strong>Switching it off:</strong> You &rarr; Your data &rarr; Share usage stats. From that moment no new events are recorded on your device. <em>Legal basis: our legitimate interest in understanding and fixing the app (Art. 6(1)(f)), which you can object to at any time with that switch. Kept for up to 24 months, then deleted.</em></p>
+
+  <h2>Who processes data for us</h2>
+  <ul>
+    <li><strong>RevenueCat</strong> (United States): purchase records.</li>
+    <li><strong>Vercel</strong> (United States) and <strong>Supabase</strong> (servers in South Korea): host Plumb and its database.</li>
+    <li><strong>FormSubmit</strong>: relays messages you send to our email.</li>
+    <li><strong>Cloudflare</strong>: serves the speed test file.</li>
+  </ul>
+  <p>Some of these are outside the European Economic Area and the UK. Where that is the case, transfers rely on the providers' standard contractual clauses or an adequacy decision.</p>
 
   <h2>Permissions, and why each one is needed</h2>
   <h3>Camera</h3>
-  <p>Used to build the 3D model of your room through the LiDAR scanner. No photographs or video are recorded or stored.</p>
-
+  <p>Used to build the 3D model of your room. No photographs or video are recorded or stored.</p>
   <h3>Location</h3>
-  <p>Apple only reveals the name of the WiFi network you are connected to, and which access point you are on, to apps that have location access. That is the only reason the app asks. Your geographic position is never stored, never transmitted, and is not used for any other purpose.</p>
-
+  <p>Apple only reveals the name of the WiFi network you are connected to, and which access point you are on, to apps that have location access. That is the only reason the app asks. Your geographic position is never stored, never transmitted, and not used for anything else.</p>
   <h3>Local network</h3>
   <p>Used to measure the round trip to your own router, and to list devices that publicly announce themselves on your network. The app reads only the names those devices already broadcast. It does not connect to them, log in to them, or send them anything.</p>
+  <h3>Notifications</h3>
+  <p>Used only for the reminders you can see and switch off in You &rarr; Notifications. They are scheduled on your device; no notification server is involved.</p>
 
-  <h2>Analytics and tracking</h2>
-  <p>The anonymous usage events above are the app's only analytics. It contains no advertising identifiers and no advertising SDKs, does not track you across other companies' apps or websites, and never sells data. RevenueCat and Plumb process data only to provide their service to us.</p>
+  <h2>Advertising and tracking</h2>
+  <p>The app contains no advertising identifiers and no advertising SDKs, does not track you across other companies' apps or websites, and never sells or shares data for advertising.</p>
 
   <h2>Children</h2>
-  <p>The app is not directed at children and collects no personal information from anyone, regardless of age: the usage events described above are anonymous.</p>
+  <p>The app is not directed at children under 16, and we do not knowingly collect personal data from them.</p>
 
   <h2>Your rights</h2>
-  <p>Because your scans and measurements never leave your device, the fastest way to erase it is to delete a scan in the app or delete the app itself. If you have sent us a message and would like it deleted, contact us at the address below and we will remove it. Usage events are anonymous, so we cannot look them up by name; deleting the app stops them, because the random identifier is deleted with it.</p>
+  <p>If you are in the EU, the EEA or the UK (and in many other places), you have the right to access the data we hold about you, to have it corrected or erased, to restrict or object to its use, and to receive it in a portable form. To use any of these, write to the address above. For usage events, include the identifier shown under You &rarr; Your data if you want a specific install found; otherwise switching off Share usage stats, or deleting the app, stops them for good, because the identifier is deleted with the app.</p>
+  <p>You also have the right to complain to your local data protection authority.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes in a way that affects what the app collects, the date at the top of this page will change and the update will be noted in the app's release notes.</p>
